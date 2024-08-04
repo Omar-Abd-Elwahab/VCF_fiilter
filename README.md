@@ -2,12 +2,14 @@
 Variant calling refinement is crucial for distinguishing true genetic variants from technical artifacts in high-throughput sequencing data. VariantTransformer, a Transformer-based deep learning model, was developed to automate variant calling refinement from low-coverage data using VCF files directly. Trained on two million variants from low-coverage sequencing data, VariantTransformer achieved an accuracy of 89.26% and a ROC AUC score of 0.88, outperforming default filtering methods and approaching the accuracy of AI-based variant callers. Comparative analysis showed VariantTransformer's superiority in functionality, variant type coverage, training size, and input data type.
 
 # VariantTransformer
-This repository serves as a comprehensive resource for the development and analysis of a deep-learning model for filtering genomic variants from VCFs. The model can be accessed at https://drive.google.com/drive/folders/1L_g9KWxBbYi7WfUr4-jgabfVmvu3Vjf2?usp=sharing. 
+This repository serves as a comprehensive resource for the development and analysis of a deep-learning model for filtering genomic variants from VCFs. The trained model can be accessed at https://drive.google.com/drive/folders/1L_g9KWxBbYi7WfUr4-jgabfVmvu3Vjf2?usp=sharing. 
 
 # Pre-print citation
 Abdelwahab, O., & Torkamaneh, D. (2024). Refinement of genetic variants needs attention. https://arxiv.org/abs/2408.00659v1
 
-# Data Preparation Steps:
+
+
+
 
 Sequencing Data Acquisition:
 
