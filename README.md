@@ -16,11 +16,11 @@ Abdelwahab, O., & Torkamaneh, D. (2024). Refinement of genetic variants needs at
 
     Alignment:
 
-    The raw FASTQ files were aligned using Sentieon BWA-MEM with the GRCh38 reference genome.
+    The raw FASTQ files were aligned using Sentieon BWA-MEM with the GRCh38 reference genome. The code used for alignment can be found at https://github.com/Omar-Abd-Elwahab/Variant_Callers
 
     Variant Calling:
 
-    Variant calling was performed using GATK4 HaplotypeCaller and BCFTools.
+    Variant calling was performed using GATK4 HaplotypeCaller and BCFTools. The exact commands for variant calling can be found at https://github.com/Omar-Abd-Elwahab/Variant_Callers
 
     Truth Set Comparison:
 
