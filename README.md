@@ -7,28 +7,32 @@ This repository serves as a comprehensive resource for the development and analy
 # Pre-print citation
 Abdelwahab, O., & Torkamaneh, D. (2024). Refinement of genetic variants needs attention. https://arxiv.org/abs/2408.00659v1
 
-## Data Preparation Steps:
+# Data Preparation Steps:
 
-    # Sequencing Data Acquisition:
+Sequencing Data Acquisition:
 
     FASTQ files containing sequencing data for samples HG003, HG006, and HG007 were obtained from the Genome in a Bottle (GIAB) Consortium.
     Sequence coverages were 10.5X, 13.6X, and 12.6X respectively.
 
     Alignment:
 
-    The raw FASTQ files were aligned using Sentieon BWA-MEM with the GRCh38 reference genome. The code used for alignment can be found at https://github.com/Omar-Abd-Elwahab/Variant_Callers
+    The raw FASTQ files were aligned using Sentieon BWA-MEM with the GRCh38 reference genome. 
+    The code used for alignment can be found at https://github.com/Omar-Abd-Elwahab/Variant_Callers
 
     Variant Calling:
 
-    Variant calling was performed using GATK4 HaplotypeCaller and BCFTools. The exact commands for variant calling can be found at https://github.com/Omar-Abd-Elwahab/Variant_Callers
+    Variant calling was performed using GATK4 HaplotypeCaller and BCFTools. 
+    The exact commands for variant calling can be found at https://github.com/Omar-Abd-Elwahab/Variant_Callers
 
     Truth Set Comparison:
 
-    The latest GIAB truth sets v4.2.1 were used to update the "FILTER" column in the resulting VCFs. Variants common with the truth sets were marked as "PASS"; otherwise, they were marked as "FAIL".
+    The latest GIAB truth sets v4.2.1 were used to update the "FILTER" column in the resulting VCFs. 
+    Variants common with the truth sets were marked as "PASS"; otherwise, they were marked as "FAIL".
 
     Data Transformation:
 
-    For model training, columns "Chrom," "POS," "REF," and "ALT" were removed, and the remaining columns (except "FILTER") were merged into one. This transformed the problem into a sentence classification problem where the merged column represented sentences and the "FILTER" column represented target labels.
+    For model training, columns "Chrom," "POS," "REF," and "ALT" were removed, and the remaining columns (except "FILTER") were merged into one. 
+    This transformed the problem into a sentence classification problem where the merged column represented sentences and the "FILTER" column represented target labels.
 
     Dataset Creation:
 
