@@ -10,7 +10,7 @@ Abdelwahab, O., & Torkamaneh, D. (2024). Refinement of genetic variants needs at
 
 
 
-
+# Information
 Sequencing Data Acquisition:
 
     FASTQ files containing sequencing data for samples HG003, HG006, and HG007 were obtained from the Genome in a Bottle (GIAB) Consortium.
